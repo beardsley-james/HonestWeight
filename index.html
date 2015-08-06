@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Honest Weight Food Co-Op Employment Application</title>
+<!--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/css.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="javascript/js.js"></script> --> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Honest Weight Food Co-Op Employment Application</h1>
+            <div class="nav">
+                <ul id="navbar">
+                    <li><a href="#personalData">Personal Data</a>
+                    </li>
+                    <li><a href="#jobInterest">Job Interest</a>
+                    </li>
+                    <li><a href="#education">Education</a>
+                    </li>
+                    <li><a href="#employmentHistory">Employment History</a>
+                    </li>
+                    <li><a href="#references">References</a>
+                    </li>
+                    <li><a href="#sign">Complete</a>
+                    </li>
+                </ul>
+                <!-- end navbar -->
+            </div>
+            <!-- end nav -->
+        </header>
+
+        <form>
+            <div id="content">
+                <h2>Please type clearly</h2>
+            </div>
+
+            <div id="personalData">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <label for="name">Name:
+                        <input type="text" name="name">
+                    </label>
+                    </br>
+                    <label for="date">Date:
+                        <input type="date" name="date">
+                    </label>
+                    </br>
+                    Permanent Address:</br>
+                    <label for="street">Street address:
+                        <input type="text" name="street">
+                    </label>
+                    </br>
+                    <label for="city">City:
+                        <input type="text" name="city">
+                    </label>
+                    <label for="state">State:
+                        <input type="text" name="state" size="2" maxlength="2">
+                    </label>
+                    <label for="zip">Zip:
+                        <input type="text" name="zip" size="5" maxlength="5">
+                    </label>
+                    </br>
+                    <label for="phonenumber">Phone Number:
+                        <input type="text" name="phonenumber" size="11">
+                    </label>
+                    </br>
+                </fieldset>
+            </div>
+
+            <div id="jobInterest">
+                <fieldset>
+                    <legend>Job Interest</legend>
+                    <label for="position">Position applied for:
+                        <input type="text" name="position">
+                    </label>
+                    </br>
+                    <label for="availability">Time available to work:
+                        <input type="checkbox" name="availability" value="full-time"> Full Time
+                        <input type="checkbox" name="availability" value="parttime"> Part Time
+                        <input type="checkbox" name="availability" value="days"> Days
+                        <input type="checkbox" name="availability" value="evenings"> Evenings</label>
+                    </br>
+                    <label for="startdate">When can you start?
+                        <input type="date" name="startdate">
+                    </label>
+                    </br>
+                    <label for="referred">Who referred you?
+                        <input type="text" name="referred">
+                    </label>
+                    </br>
+                    <label for="prioremployment">Have you worked here before?
+                        <input type="checkbox" name="prioremployment" value="yes"> Yes
+                        <input type="checkbox" name="prioremployment" value="no"> No </label>
+                    </br>
+                    <label for="legal">Are you legally able to work in this country?
+                        <input type="checkbox" name="legal" value="yes"> Yes
+                        <input type="checkbox" name="legal" value="no"> No</label>
+                    </br>
+                    <label for="felony">Have you ever been convicted of a felony?
+                        <input type="checkbox" name="felony" value="yes"> Yes
+                        <input type="checkbox" name="felony" value="no"> No</label>
+                    </br>
+                    <aside>Answer "no" if you received youthful offender adjudication or a felony conviction was vacated or you received a pardon. A "yes" answer will not automatically disqualify you, but does require the coop to determine if, in its view, there is a relationship between the conviction and the employment sought or if granting employment would involve an unreasonable risk to property or the safety and welfare of others.</aside>
+                    </br>
+                    <label for="timesavailable"> What time are you available? </br>
+                    </label>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>AM</th>
+                            <th>PM</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="mondayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="mondayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="tuesdayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="tuesdayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="wednesdayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="wednesdayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="thursdayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="thursdayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="fridayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="fridayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="saturdayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="saturdayPM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="sundayAM">
+                            </td>
+                            <td>
+                                <input type="checkbox" name="timesavailable" value="sundayPM">
+                            </td>
+                        </tr>
+                    </table>
+                    </br>
+                </fieldset>
+            </div>
+
+            <div id="education">
+                <fieldset>
+                    <legend>Education</legend>
+                    <!-- <label for = ""><input type = "" name = ""></label></br> -->
+                    <fieldset>
+                        <legend>High School</legend>
+                        <label for="hsname">Name
+                            <input type="text" name="hsname">
+                        </label>
+                        </br>
+                        <label for="hslocation">Location
+                            <input type="text" name="hslocation">
+                        </label>
+                        </br>
+                        <label for="hscourses">Courses Taken
+                            <input type="text" name="hscourses">
+                        </label>
+                        </br>
+                        <label for="hsgraduated">Have you graduated? </label>
+                        <input type="checkbox" name="hsgraduated" value="yes"> Yes
+                        <input type="checkbox" name="hsgraduated" value="no"> No
+                        <input type="checkbox" name="hsgraduated" value="enrolled"> Enrolled </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>College</legend>
+                        <label for="collegename">Name
+                            <input type="text" name="collegename">
+                        </label>
+                        </br>
+                        <label for="collegelocation">Location
+                            <input type="text" name="collegelocation">
+                        </label>
+                        </br>
+                        <label for="collegecourses">Courses Taken
+                            <input type="text" name="collegecourses">
+                        </label>
+                        </br>
+                        <label for="collegegraduated">Have you graduated? </label>
+                        <input type="checkbox" name="collegegraduated" value="yes"> Yes
+                        <input type="checkbox" name="collegegraduated" value="no"> No
+                        <input type="checkbox" name="collegegraduated" value="enrolled"> Enrolled </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>University</legend>
+                        <label for="universityname">Name
+                            <input type="text" name="universityname">
+                        </label>
+                        </br>
+                        <label for="universitylocation">Location
+                            <input type="text" name="universitylocation">
+                        </label>
+                        </br>
+                        <label for="universitycourses">Courses Taken
+                            <input type="text" name="universitycourses">
+                        </label>
+                        </br>
+                        <label for="universitygraduated">Have you graduated? </label>
+                        <input type="checkbox" name="universitygraduated" value="yes"> Yes
+                        <input type="checkbox" name="universitygraduated" value="no"> No
+                        <input type="checkbox" name="universitygraduated" value="enrolled"> Enrolled </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business, Trade or Technical School</legend>
+                        <label for="tradeschoolname">Name
+                            <input type="text" name="tradeschoolname">
+                        </label>
+                        </br>
+                        <label for="tradeschoollocation">Location
+                            <input type="text" name="tradeschoollocation">
+                        </label>
+                        </br>
+                        <label for="tradeschoolcourses">Courses Taken
+                            <input type="text" name="tradeschoolcourses">
+                        </label>
+                        </br>
+                        <label for="tradeschoolgraduated">Have you graduated? </label>
+                        <input type="checkbox" name="tradeschoolgraduated" value="yes"> Yes
+                        <input type="checkbox" name="tradeschoolgraduated" value="no"> No
+                        <input type="checkbox" name="tradeschoolgraduated" value="enrolled"> Enrolled </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Other</legend>
+                        <label for="othername">Name
+                            <input type="text" name="othername">
+                        </label>
+                        </br>
+                        <label for="otherlocation">Location
+                            <input type="text" name="otherlocation">
+                        </label>
+                        </br>
+                        <label for="othercourses">Courses Taken
+                            <input type="text" name="othercourses">
+                        </label>
+                        </br>
+                        <label for="othergraduated">Have you graduated? </label>
+                        <input type="checkbox" name="othergraduated" value="yes"> Yes
+                        <input type="checkbox" name="othergraduated" value="no"> No
+                        <input type="checkbox" name="othergraduated" value="enrolled"> Enrolled </br>
+                    </fieldset>
+                    <label for="skills">What special talents, hobbies or fields of interest will you bring to your job here at the Co-op? </br>
+                        <textarea name="skills"></textarea>
+                    </label>
+                    </br>
+                </fieldset>
+            </div>
+
+            <div id="employmentHistory">
+                <fieldset>
+                    <legend>Employment History</legend>
+                    <fieldset>
+                        <legend>Most Recent Employer</legend>
+                        <label for="mostrecentname">Name
+                            <input type="text" name="mostrecentname">
+                        </label>
+                        </br>
+                        <label for="mostrecentbusinesstype">Type of Business
+                            <input type="text" name="mostrecentbusinesstype">
+                        </label>
+                        </br>
+                        <label for="mostrecentaddress">Address
+                            <input type="text" name="mostrecentaddress">
+                        </label>
+                        </br>
+                        <label for="mostrecentphonenumber">Phone Number
+                            <input type="text" name="mostrecentphonenumber">
+                        </label>
+                        </br>
+                        <label for="mostrecentsupervisor">Supervisor
+                            <input type="text" name="mostrecentsupervisor">
+                        </label>
+                        </br>
+                        <label for="mostrecentsupervisorstitle">Supervisor's Title
+                            <input type="text" name="mostrecentsupervisorstitle">
+                        </label>
+                        </br>
+                        <label for="mostrecentposition">Your Position
+                            <input type="text" name="mostrecentposition">
+                        </label>
+                        </br>
+                        <label for="mostrecenttypeofemployment"> Type of Employment
+                            <input type="checkbox" name="mostrecenttypeofemployment" value="fulltime"> Full Time
+                            <input type="checkbox" name="mostrecenttypeofemployment" value="parttime"> Part Time
+                            <input type="checkbox" name="mostrecenttypeofemployment" value="temporary"> Temporary</br>
+                            <fieldset>
+                                <legend>Employment Dates</legend>
+                                <label for="mostrecentstartdate">Start Date
+                                    <input type="date" name="mostrecentstartdate">
+                                </label>
+                                </br>
+                                <label for="mostrecentenddate">End Date
+                                    <input type="date" name="mostrecentenddate">
+                                </label>
+                                </br>
+                            </fieldset>
+                            <label for="mostrecentsalary">Ending Salary
+                                <input type="text" name="mostrecentsalary">
+                            </label>
+                            </br>
+                            <label for="mostrecentreasonforleaving">Reason for Leaving
+                                <textarea name="mostrecentreasonforleaving"></textarea>
+                            </label>
+                            </br>
+                            <label for="mostrecentcontact">May we contact them?
+                                <input type="radio" name="mostrecentcontact" checked="checked"> Yes
+                                <input type="radio" name="mostrecentcontact"> No</label>
+                            </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Second Most Recent Employer</legend>
+                        <label for="secondmostrecentname">Name
+                            <input type="text" name="secondmostrecentname">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentbusinesstype">Type of Business
+                            <input type="text" name="secondmostrecentbusinesstype">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentaddress">Address
+                            <input type="text" name="secondmostrecentaddress">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentphonenumber">Phone Number
+                            <input type="text" name="secondmostrecentphonenumber">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentsupervisor">Supervisor
+                            <input type="text" name="secondmostrecentsupervisor">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentsupervisorstitle">Supervisor's Title
+                            <input type="text" name="secondmostrecentsupervisorstitle">
+                        </label>
+                        </br>
+                        <label for="secondmostrecentposition">Your Position
+                            <input type="text" name="secondmostrecentposition">
+                        </label>
+                        </br>
+                        <label for="secondmostrecenttypeofemployment"> Type of Employment
+                            <input type="checkbox" name="secondmostrecenttypeofemployment" value="fulltime"> Full Time
+                            <input type="checkbox" name="secondmostrecenttypeofemployment" value="parttime"> Part Time
+                            <input type="checkbox" name="secondmostrecenttypeofemployment" value="temporary"> Temporary</br>
+                            <fieldset>
+                                <legend>Employment Dates</legend>
+                                <label for="secondmostrecentstartdate">Start Date
+                                    <input type="date" name="secondmostrecentstartdate">
+                                </label>
+                                </br>
+                                <label for="secondmostrecentenddate">End Date
+                                    <input type="date" name="secondmostrecentenddate">
+                                </label>
+                                </br>
+                            </fieldset>
+                            <label for="secondmostrecentsalary">Ending Salary
+                                <input type="text" name="secondmostrecentsalary">
+                            </label>
+                            </br>
+                            <label for="secondmostrecentreasonforleaving">Reason for Leaving
+                                <textarea name="secondmostrecentreasonforleaving"></textarea>
+                            </label>
+                            </br>
+                            <label for="secondmostrecentcontact">May we contact them?
+                                <input type="radio" name="secondmostrecentcontact" checked="checked"> Yes
+                                <input type="radio" name="secondmostrecentcontact"> No</label>
+                            </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Third Most Recent Employer</legend>
+                        <label for="thirdmostrecentname">Name
+                            <input type="text" name="thirdmostrecentname">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentbusinesstype">Type of Business
+                            <input type="text" name="thirdmostrecentbusinesstype">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentaddress">Address
+                            <input type="text" name="thirdmostrecentaddress">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentphonenumber">Phone Number
+                            <input type="text" name="thirdmostrecentphonenumber">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentsupervisor">Supervisor
+                            <input type="text" name="thirdmostrecentsupervisor">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentsupervisorstitle">Supervisor's Title
+                            <input type="text" name="thirdmostrecentsupervisorstitle">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecentposition">Your Position
+                            <input type="text" name="thirdmostrecentposition">
+                        </label>
+                        </br>
+                        <label for="thirdmostrecenttypeofemployment"> Type of Employment
+                            <input type="checkbox" name="thirdmostrecenttypeofemployment" value="fulltime"> Full Time
+                            <input type="checkbox" name="thirdmostrecenttypeofemployment" value="parttime"> Part Time
+                            <input type="checkbox" name="thirdmostrecenttypeofemployment" value="temporary"> Temporary</br>
+                            <fieldset>
+                                <legend>Employment Dates</legend>
+                                <label for="thirdmostrecentstartdate">Start Date
+                                    <input type="date" name="thirdmostrecentstartdate">
+                                </label>
+                                </br>
+                                <label for="thirdmostrecentenddate">End Date
+                                    <input type="date" name="thirdmostrecentenddate">
+                                </label>
+                                </br>
+                            </fieldset>
+                            <label for="thirdmostrecentsalary">Ending Salary
+                                <input type="text" name="thirdmostrecentsalary">
+                            </label>
+                            </br>
+                            <label for="thirdmostrecentreasonforleaving">Reasong for Leaving
+                                <textarea name="thirdmostrecentreasonforleaving"></textarea>
+                            </label>
+                            </br>
+                            <label for="thirdmostrecentcontact">May we contact them?
+                                <input type="radio" name="thirdmostrecentcontact" checked="checked"> Yes
+                                <input type="radio" name="thirdmostrecentcontact"> No</label>
+                            </br>
+                    </fieldset>
+                </fieldset>
+            </div>
+
+            <div id="references">
+                <fieldset>
+                    <legend>References</legend>
+                    <!-- <label for = ""><input type = "" name = ""></label></br> -->
+                    <fieldset>
+                        <legend>First Reference</legend>
+                        <label for="firstreferencename">Name
+                            <input type="text" name="firstreferencename">
+                        </label>
+                        </br>
+                        <label for="firstreferencejob">Company and Title
+                            <input type="text" name="firstreferencejob">
+                        </label>
+                        </br>
+                        <label for="firstreferencehomephone">Home Phone Number
+                            <input type="text" name="firstreferencehomephone">
+                        </label>
+                        </br>
+                        <label for="firstreferenceworkphone">Business Phone Number
+                            <input type="text" name="firstreferenceworkphone">
+                        </label>
+                        </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Second Reference</legend>
+                        <label for="secondreferencename">Name
+                            <input type="text" name="secondreferencename">
+                        </label>
+                        </br>
+                        <label for="secondreferencejob">Company and Title
+                            <input type="text" name="secondreferencejob">
+                        </label>
+                        </br>
+                        <label for="secondreferencehomephone">Home Phone Number
+                            <input type="text" name="secondreferencehomephone">
+                        </label>
+                        </br>
+                        <label for="secondreferenceworkphone">Business Phone Number
+                            <input type="text" name="secondreferenceworkphone">
+                        </label>
+                        </br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Third Reference</legend>
+                        <label for="thirdreferencename">Name
+                            <input type="text" name="thirdreferencename">
+                        </label>
+                        </br>
+                        <label for="thirdreferencejob">Company and Title
+                            <input type="text" name="thirdreferencejob">
+                        </label>
+                        </br>
+                        <label for="thirdreferencehomephone">Home Phone Number
+                            <input type="text" name="thirdreferencehomephone">
+                        </label>
+                        </br>
+                        <label for="thirdreferenceworkphone">Business Phone Number
+                            <input type="text" name="thirdreferenceworkphone">
+                        </label>
+                        </br>
+                    </fieldset>
+                </fieldset>
+            </div>
+
+            <div id="sign">
+                <fieldset>
+                    <legend>Complete</legend>
+                    <blockquote>I declare that the facts set forth in my application are true and complete. I understand that if I am employed, false information stated in this application shall be sufficient cause for dismissal. I understand that employment with the co-op is for no definite period of time. The co-op and its employees have at all times the right to terminate the employment relationship.</blockquote>
+                    <label for="signature">Name
+                        <input type="text" name="signature">
+                    </label>
+                    <label for="signaturedate"> Date
+                        <input type="date" name="signaturedate">
+                    </label>
+                    </br>
+                    <blockquote>It is the Policy of Honest Weight Food Co-op to provide equal employment opportunities to all applicants and employees without regard to race, color, religion, gender, sexual orientation, national origin, age, disability, veteran standing, or any legally protected status.</blockquote>
+                    <button type="submit">Submit</button>
+                    </br>
+                </fieldset>
+            </div>
+
+        </form>
+
+        <footer>
+            <ul id="buttons">
+                <li id="previous"><a href="#">Previous</a>
+                </li>
+                <li id="save"><a href="#">Save</a>
+                </li>
+                <li id="next"><a href="#">Next</a>
+            </ul>
+            <ul>
+                <li><a href="#personalData">Personal Data</a>
+                </li>
+                <li><a href="#jobInterest">Job Interest</a>
+                </li>
+                <li><a href="#education">Education</a>
+                </li>
+                <li><a href="#employmentHistory">Employment History</a>
+                </li>
+                <li><a href="#references">References</a>
+                </li>
+                <li><a href="#sign">Complete</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
